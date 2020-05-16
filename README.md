@@ -1,3 +1,1 @@
-Executar no VisualStudio 
-- Add-Migration "Initial" -v
-- Update-Database -v
+CRUD de cadastro de livros desenvolvido com .NET Core 3.1 utilizando EntityFrameworkCore, Identity persistindo no SQLite. 
