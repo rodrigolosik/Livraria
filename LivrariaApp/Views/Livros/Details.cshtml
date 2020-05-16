@@ -1,0 +1,21 @@
+﻿@model LivrariaApp.Models.Livro
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Livro</h4>
+    <hr />
+   <partial name="PartialViews/_Details_Delete" />
+</div>
+<div class="row">
+    <div class="col">
+        <a asp-controller="Livros" asp-action="Index" class="btn btn-outline-secondary">Voltar</a>
+        <a asp-controller="Livros" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-primary">Editar</a>
+    </div>
+    <div class="col">
+    </div>
+</div>

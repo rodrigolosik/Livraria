@@ -1,0 +1,33 @@
+﻿@model LivrariaApp.Models.Livro
+
+@{
+    ViewData["Title"] = "Novo";
+}
+
+<h1>Novo</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <partial name="PartialViews/_Create_Edit" />
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a asp-controller="Livros" asp-action="Index" class="btn btn-outline-secondary btn-block">Voltar</a>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <input type="submit" value="Novo" class="btn btn-outline-primary btn-block" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
